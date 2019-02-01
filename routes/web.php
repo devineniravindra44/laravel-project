@@ -40,4 +40,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/demo/{id}','DemoController@demo');
 
 Route::resource('/test/{id}','TestController@show');
+Route::get('/team', function () {
+    return 'team';
+});
 
